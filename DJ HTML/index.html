@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="grid-container">
+	<!--Header-->
+	<div class="item header-container">
+		<ul>
+			<li>
+				<img src="temp_user.png" alt="Profile icon" usemap="#profile" style="width:75px;height:75px">
+				<map name="profile"><area shape="rect" coords="0,0,75,75" href="#profile"></map>
+			</li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#home">Home</a></li>
+			<li style="float:left">
+				<img src="temp_logo.png" alt="Logo icon" usemap="#home" style="width:75px;height:75px">
+				<map name="home"><area shape="rect" coords="0,0,75,75" href="#home"></map>
+			</li>
+			<li style="float:left"><a href="#home">Chill-Fi</a></li>
+		</ul>
+	</div>
+	<!--left tab-->	
+	<div class="item tab-left-container">
+		<div class="side-tab-grid-container">
+        		<div style="background-color:orange;"><h1>Playlists</h1></div>
+        		<div style=background-color:green;>
+				<form style="text-align:center; text-wrap:nowrap;" onsubmit="searchPlaylist()">
+					<input type="text" style="width:400px" placeholder="Enter playlist name here" class="placeholder-text">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+            		<div style="background-color:#6d4391;">
+				<div class="content-grid-container">
+					<p class="content-item-1"><img src="temp_playlist.png" alt="Playlist Icon" style="width:50px;height:50px"><p>
+					<p class="content-item-2">Playlist name<p>
+					<p class="content-item-4"><img src="temp_play.png"  alt="Play Icon" style="width:50px;height:50px"><p>
+				</div>
+				<div class="content-grid-container">
+					<p class="content-item-1"><img src="temp_playlist.png" alt="Playlist Icon" style="width:50px;height:50px"><p>
+					<p class="content-item-2">Playlist name<p>
+					<p class="content-item-4"><img src="temp_play.png"  alt="Play Icon" style="width:50px;height:50px"><p>
+				</div>
+				<div class="content-grid-container">
+					<p class="content-item-1"><img src="temp_playlist.png" alt="Playlist Icon" style="width:50px;height:50px"><p>
+					<p class="content-item-2">Playlist name<p>
+					<p class="content-item-4"><img src="temp_play.png"  alt="Play Icon" style="width:50px;height:50px"><p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--left filler tab-->
+	<div class="item item-3 filler-tab"></div>
+	<!--middle tab-->
+	<div class="item tab-mid-container">
+		<div class="mid-tab-grid-container">
+			<div style="background-color:orange;"><h1>Timeslots</h1></div>
+			<div>
+				<div class="time-grid-container">
+					<p class="time-item-1">12:00AM - 1:00AM<p>
+					<p class="time-item-2"><img src="temp_add.png"  alt="Add Icon" style="width:50px;height:50px"><p>
+				</div>
+				<div class="time-grid-container">
+					<p class="time-item-1">1:00AM - 2:00AM<p>
+					<p class="time-item-2"><img src="temp_add.png"  alt="Add Icon" style="width:50px;height:50px"><p>
+				</div>
+				<div class="time-grid-container">
+					<p class="time-item-1">4:00AM - 3:00AM<p>
+					<p class="time-item-2"><img src="temp_add.png"  alt="Add Icon" style="width:50px;height:50px"><p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--right filler tab-->
+	<div class="item item-5 filler-tab"></div>
+	<!--right tab-->
+	<div class="item tab-right-container">
+		<div class="side-tab-grid-container">
+			<div style="background-color:orange;"><h1>Songs</h1></div>
+			<div style=background-color:green;>
+				<form style="text-align:center; text-wrap:nowrap;" onsubmit="searchSong()">
+					<input type="text" style="width:400px" placeholder="Enter song name here" class="placeholder-text">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+			<div style="background-color:#6d4391;">
+				<div class="content-grid-container">
+					<p class="content-item-1"><img src="temp_song.png" alt="Song Icon" style="width:50px;height:50px"><p>
+					<p class="content-item-2">Song name<p>
+					<p class="content-item-3">Song artist<p>
+					<p class="content-item-4"><img src="temp_add.png"  alt="Add song Icon" style="width:50px;height:50px"><p>
+				</div>
+				<div class="content-grid-container">
+					<p class="content-item-1"><img src="temp_song.png" alt="Song Icon" style="width:50px;height:50px"><p>
+					<p class="content-item-2">Song name<p>
+					<p class="content-item-3">Song artist<p>
+					<p class="content-item-4"><img src="temp_add.png"  alt="Add song Icon" style="width:50px;height:50px"><p>
+				</div>
+				<div class="content-grid-container">
+					<p class="content-item-1"><img src="temp_song.png" alt="Song Icon" style="width:50px;height:50px"><p>
+					<p class="content-item-2">Song name<p>
+					<p class="content-item-3">Song artist<p>
+					<p class="content-item-4"><img src="temp_add.png"  alt="Add song Icon" style="width:50px;height:50px"><p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--curr song info-->
+	<div class="item curr-song-container">
+		<img src="temp_song.png" alt="Song Icon" style="width:200px;height:200px">
+		<p>Song name<p>
+	</div>
+	<!--progress bar-->
+	<div class="item progress-container" style="text-align:center;">progress bar</div>
+</div>
+
+<script>
+function searchPlaylist(){
+	alert("Searched for playlist");
+}
+
+function searchSong(){
+	alert("Searched for song");
+}
+</script>
+
+</body>
+</html>
