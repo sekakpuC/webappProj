@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+
+<!--Header element-->
+<div class="header-banner">
+    <!--just add div elements-->
+    <div><img src="Icons/temp_logo.png" alt="LogoImage." usemap="#home"><map name="home"><area shape="rect" coords="0,0,70,70" href="#home"></map></div>
+    <div class="headertext"><a href="#home">Chill-Fi</a></div>
+    <div style="margin-left:auto;"> </div>
+    <div class="headertext"><a href="#home">Home</a></div>
+    <div class="headertext"><a href="#about">About</a></div>
+    <div class="headertext"><a href="#contact">Contact</a></div>
+    <div><img src="Icons/temp_user.png" alt="UserImage." usemap="#profile"><map name="profile"><area shape="rect" coords="0,0,70,70" href="#profile"></map></div>
+</div>
+
+<!--Horizontal divider-->
+<div class="horizontal-divider"></div>
+
+<!--Grid of tabs-->
+<div class="tab-container">
+    <div class="tab tab-left">
+        <!--header containing title & search bar-->
+        <div class="side-tab-header">
+            <div class="tab-title-text">Playlists</div>
+            <form style="text-align:center; text-wrap:nowrap;" name="playlistform" onsubmit="searchPlaylist()">
+                <input type="text" style="width:80%" placeholder="Enter playlist name here" class="placeholder-text" name="playlistname">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <!--nav list of playlists-->
+        <div class="side-tab-list">
+            <nav id="playlist-list">
+                
+            </nav>
+        </div>
+    </div>
+
+    <div class="tab tab-right">
+        <!--header containing title & search bar-->
+        <div class="side-tab-header">
+            <div class="tab-title-text">Songs</div>
+            <form style="text-align:center; text-wrap:nowrap;" name="songform" onsubmit="searchSong()">
+                <input type="text" style="width:80%" placeholder="Enter song name here" class="placeholder-text" name="songname">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <!--nav list of songs-->
+        <div class="side-tab-list">
+            <nav id="song-list">
+                
+            </nav>
+        </div>
+    </div>
+
+    <div class="tab tab-mid-top">
+        <!--header containing title-->
+        <div class="mid-top-tab-header">
+            <div class="tab-title-text">Timeslots</div>
+        </div>
+        <!--nav list of times-->
+        <div class="mid-top-tab-list">
+            <div class="mid-top-tab-list-item">
+                <div>
+                    <div class="timeslot-text">12:00AM - 1:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">1:00AM - 2:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">2:00AM - 3:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">3:00AM - 4:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">4:00AM - 5:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">5:00AM - 6:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">6:00AM - 7:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">7:00AM - 8:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">8:00AM - 9:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">9:00AM - 10:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">10:00AM - 11:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">11:00AM - 12:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">12:00AM - 1:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">1:00PM - 2:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">2:00PM - 3:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">3:00PM - 4:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">4:00PM - 5:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">5:00PM - 6:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">6:00PM - 7:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">7:00PM - 8:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">8:00PM - 9:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">9:00PM - 10:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">10:00PM - 11:00PM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+                <div>
+                    <div class="timeslot-text">11:00PM - 12:00AM</div>
+                    <div style="margin-left:auto">button</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab tab-mid-bot">
+        <!--song cover-->
+        <div class="mid-bot-tab-text">Currently Playing:</div>
+        <div><img src="Icons/temp_user.png" style="height:250px;width:250px;" id="curr-song-cover"></div>
+        <!--song name & artist-->
+        <div class="mid-bot-tab-song-name" id="curr-song-name">Song name</div>
+        <div class="mid-bot-tab-song-artist" id="curr-song-artist">Song artist</div>
+    </div>
+</div>
+
+<!--TODO TEMP-->
+<div class="item progress-container" style="text-align:center; margin:auto; padding: 10px;">
+    <audio id="songplayer" controls>
+        <source src="" type="audio/mp3">
+        Your browser does not support this audio element.
+    </audio>
+</div>
+
+<!--
+Song control panel
+<div style="display:flex;justify-content:center;width:100%">
+    <div class="tab-song-control-panel">
+        <button id="pause-button" class="play-pause-button play"></button>
+        <input id="volume-slider" class="volume-slider" type="range" min="0" max="1" step="0.01" value="1">
+    </div>
+</div>
+Progress bar
+<div class="progress-bar-container">
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+</div>    
+-->
+
+
+<script src="javascript.js"></script>
+</body>
+</html>
