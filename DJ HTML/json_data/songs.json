@@ -1,0 +1,6 @@
+{
+    "songs": [
+        {"name": "Audio Test", "artist": "Outlier Audio", "cover": "Icons/covers/song_cover_def.png", "file": "Songs/audio_test.mp3", "songid": "0"},
+        {"name": "In Dreamland", "artist": "Chillpeach", "cover": "Icons/covers/song_cover_def.png", "file": "Songs/In_Dreamland.mp3", "songid": "1"}
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "playlists": [
+        {"name": "Playlist 0", "cover": "Icons/temp_playlist.png", "songs": [0]},
+        {"name": "Playlist 1", "cover": "Icons/temp_playlist.png", "songs": [0, 1]}
+    ]
+}
