@@ -7,44 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const displaySongDataDiv = document.getElementById('displaySongData');
     const displayPlaylistDataDiv = document.getElementById('displayPlaylistData');
 
-    
-    //Send song data button
-    sendDataButton.addEventListener('click', function () {
-        const name = document.getElementById('s_name').value;
-        const artist = document.getElementById('s_artist').value;
-        const cover = document.getElementById('s_cover').value;
-        const path = document.getElementById('s_path').value;
-
-        if (!name || !artist || !path) {
-            alert('Please fill in all fields');
-            return;
-        }
-
-        const dataToSend = {
-            name: name,
-            artist: artist,
-            cover: cover,
-            path: path
-        };
-
-        fetch('/sendSongData', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(dataToSend),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Server response:', data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    });
-    
-
-
     //Retrieve data button
     retrieveSongDataButton.addEventListener('click', function () {
         console.log("retrieveSongDataButton click");
@@ -230,4 +192,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return playlistTabListItem;
     }
+
+    /*
+    //Send song data button
+    sendDataButton.addEventListener('click', function () {
+        const name = document.getElementById('s_name').value;
+        const artist = document.getElementById('s_artist').value;
+        const cover = document.getElementById('s_cover').value;
+        const path = document.getElementById('s_path').value;
+
+        if (!name || !artist || !path) {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        const dataToSend = {
+            name: name,
+            artist: artist,
+            cover: cover,
+            path: path
+        };
+
+        fetch('/sendSongData', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(dataToSend),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Server response:', data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+    */
 });
