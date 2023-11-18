@@ -1,3 +1,5 @@
+/* public/css/style.css */
+
 :root{
 	--bg1: rgb(38, 36, 35);
 	--bg2: #454241;
@@ -167,14 +169,14 @@ body{
     padding-right: 5px;
 }
 
-.side-tab-list-item > div.song-name,.song-artist,.playlist-name{
+.side-tab-list-item > div.song-name,.song-artist,.playlist-name,.playlist-artist{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
     font-family: var(--deffonts);
     font-weight: bold;
-    font-size: 160%;
+    font-size: 140%;
     color: var(--textcolor1);
 }
 
